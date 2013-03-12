@@ -10,7 +10,7 @@ get '/test/:hello' do
 end
 
 get '/testdata/:thing', :provides => 'json' do
-	JSON.pretty_generate(import_json("test_"+params[:thing]+".json"))
+	JSON.pretty_generate(import_json("test_#{params[:thing]}.json"))
 end
 
 def import_json(filename)
