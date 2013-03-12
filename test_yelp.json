@@ -1,0 +1,1044 @@
+{
+    "all_votes": [
+        {
+            "votes": {
+                "funny": 15, 
+                "useful": 48, 
+                "cool": 18
+            }, 
+            "review_count": 31, 
+            "name": "LiiLii C.", 
+            "url": "http://www.yelp.com/user_details?userid=JkeCKyEaQlbLd9uZYl4DjA", 
+            "average_stars": 3.2258064516128999, 
+            "user_id": "JkeCKyEaQlbLd9uZYl4DjA", 
+            "type": "user"
+        }, 
+        {
+            "votes": {
+                "funny": 0, 
+                "useful": 2,
+                "cool": 0
+            }, 
+            "review_count": 4, 
+            "name": "Jan Ellen T.", 
+            "url": "http://www.yelp.com/user_details?userid=cs91PAsv6esdWAaSkzm2lg", 
+            "average_stars": 3.0, 
+            "user_id": "cs91PAsv6esdWAaSkzm2lg", 
+            "type": "user"
+        }, 
+        {
+            "votes": {
+                "funny": 8, 
+                "useful": 19, 
+                "cool": 10
+            }, 
+            "review_count": 33, 
+            "name": "Saki U.", 
+            "url": "http://www.yelp.com/user_details?userid=cMgGj2FXHEbzdNZdLN_EwA", 
+            "average_stars": 3.60606060606061, 
+            "user_id": "cMgGj2FXHEbzdNZdLN_EwA", 
+            "type": "user"
+        }, 
+        {
+            "votes": {
+                "funny": 61, 
+                "useful": 119, 
+                "cool": 78
+            }, 
+            "review_count": 33, 
+            "name": "stephanie h.", 
+            "url": "http://www.yelp.com/user_details?userid=KXJbnHT4PDS1JZNCFKdmMg", 
+            "average_stars": 3.3030303030303001, 
+            "user_id": "KXJbnHT4PDS1JZNCFKdmMg", 
+            "type": "user"
+        }, 
+        {
+            "votes": {
+                "funny": 45, 
+                "useful": 74, 
+                "cool": 30
+            }, 
+            "review_count": 78, 
+            "name": "Theodore J.", 
+            "url": "http://www.yelp.com/user_details?userid=Tpmvufw1eea1DrjLAY2jLg", 
+            "average_stars": 4.0384615384615401, 
+            "user_id": "Tpmvufw1eea1DrjLAY2jLg", 
+            "type": "user"
+        }, 
+        {
+            "votes": {
+                "funny": 0, 
+                "useful": 0, 
+                "cool": 0
+            }, 
+            "review_count": 1, 
+            "name": "Doug H.", 
+            "url": "http://www.yelp.com/user_details?userid=L22W35q3Ci3TytpA2LW34g", 
+            "average_stars": 4.0, 
+            "user_id": "L22W35q3Ci3TytpA2LW34g", 
+            "type": "user"
+        }, 
+        {
+            "votes": {
+                "funny": 12, 
+                "useful": 16, 
+                "cool": 6
+            }, 
+            "review_count": 12, 
+            "name": "Amelia M.", 
+            "url": "http://www.yelp.com/user_details?userid=xiJ6e1qN3Sqv4dS4D8CpNg", 
+            "average_stars": 4.1818181818181799, 
+            "user_id": "xiJ6e1qN3Sqv4dS4D8CpNg", 
+            "type": "user"
+        }, 
+        {
+            "votes": {
+                "funny": 19, 
+                "useful": 23, 
+                "cool": 13
+            }, 
+            "review_count": 24, 
+            "name": "Ty G.", 
+            "url": "http://www.yelp.com/user_details?userid=pu96s510jutWeFOuofgY2g", 
+            "average_stars": 4.2608695652173898, 
+            "user_id": "pu96s510jutWeFOuofgY2g", 
+            "type": "user"
+        }, 
+        {
+            "votes": {
+                "funny": 0, 
+                "useful": 1, 
+                "cool": 0
+            }, 
+            "review_count": 4, 
+            "name": "Steve K.", 
+            "url": "http://www.yelp.com/user_details?userid=zcOlcoYhVgEgWxRpTVjUJA", 
+            "average_stars": 3.0, 
+            "user_id": "zcOlcoYhVgEgWxRpTVjUJA", 
+            "type": "user"
+        }, 
+        {
+            "votes": {
+                "funny": 35, 
+                "useful": 21, 
+                "cool": 14
+            }, 
+            "review_count": 29, 
+            "name": "Chris M.", 
+            "url": "http://www.yelp.com/user_details?userid=_NH7Cpq3qZkByP5xR4gXog", 
+            "average_stars": 3.8965517241379302, 
+            "user_id": "_NH7Cpq3qZkByP5xR4gXog", 
+            "type": "user"
+        }, 
+        {
+            "votes": {
+                "funny": 1, 
+                "useful": 6, 
+                "cool": 3
+            }, 
+            "review_count": 3, 
+            "name": "Christina W.", 
+            "url": "http://www.yelp.com/user_details?userid=9YLxlEqpEjiugcA1NCbQnw", 
+            "average_stars": 3.6666666666666701, 
+            "user_id": "9YLxlEqpEjiugcA1NCbQnw", 
+            "type": "user"
+        }, 
+        {
+            "votes": {
+                "funny": 6, 
+                "useful": 28, 
+                "cool": 9
+            }, 
+            "review_count": 28, 
+            "name": "Cheri W.", 
+            "url": "http://www.yelp.com/user_details?userid=PiSHysV8QdhgzU7QIRn1Kg", 
+            "average_stars": 3.1071428571428599, 
+            "user_id": "PiSHysV8QdhgzU7QIRn1Kg", 
+            "type": "user"
+        }, 
+        {
+            "votes": {
+                "funny": 22, 
+                "useful": 101, 
+                "cool": 23
+            }, 
+            "review_count": 79, 
+            "name": "Lord H.", 
+            "url": "http://www.yelp.com/user_details?userid=PB3OGUgRSajFx18EBUwwEQ", 
+            "average_stars": 3.83544303797468, 
+            "user_id": "PB3OGUgRSajFx18EBUwwEQ", 
+            "type": "user"
+        }, 
+        {
+            "votes": {
+                "funny": 0, 
+                "useful": 1, 
+                "cool": 0
+            }, 
+            "review_count": 1, 
+            "name": "Derek F.", 
+            "url": "http://www.yelp.com/user_details?userid=e9ATa_PlOWiyTS4QhdsJKA", 
+            "average_stars": 1.0, 
+            "user_id": "e9ATa_PlOWiyTS4QhdsJKA", 
+            "type": "user"
+        }, 
+        {
+            "votes": {
+                "funny": 1, 
+                "useful": 0, 
+                "cool": 0
+            }, 
+            "review_count": 8, 
+            "name": "Yuan D.", 
+            "url": "http://www.yelp.com/user_details?userid=urQ0TUF3uhc-oOHzb3F5tQ", 
+            "average_stars": 3.375, 
+            "user_id": "urQ0TUF3uhc-oOHzb3F5tQ", 
+            "type": "user"
+        }, 
+        {
+            "votes": {
+                "funny": 14, 
+                "useful": 3, 
+                "cool": 2
+            }, 
+            "review_count": 1, 
+            "name": "Ryan H.", 
+            "url": "http://www.yelp.com/user_details?userid=DUJLlGEHUerY8feKhjO85A", 
+            "average_stars": 1.0, 
+            "user_id": "DUJLlGEHUerY8feKhjO85A", 
+            "type": "user"
+        }, 
+        {
+            "votes": {
+                "funny": 150, 
+                "useful": 192, 
+                "cool": 138
+            }, 
+            "review_count": 68, 
+            "name": "Tiffany R.", 
+            "url": "http://www.yelp.com/user_details?userid=ti5uWqAxf7pOkKs7csMlDA", 
+            "average_stars": 4.2647058823529402, 
+            "user_id": "ti5uWqAxf7pOkKs7csMlDA", 
+            "type": "user"
+        }, 
+        {
+            "votes": {
+                "funny": 2, 
+                "useful": 10, 
+                "cool": 4
+            }, 
+            "review_count": 13, 
+            "name": "Jennifer C.", 
+            "url": "http://www.yelp.com/user_details?userid=JssCk4of-CQ7j81ZLrZMZg", 
+            "average_stars": 3.0, 
+            "user_id": "JssCk4of-CQ7j81ZLrZMZg", 
+            "type": "user"
+        }, 
+        {
+            "votes": {
+                "funny": 4, 
+                "useful": 4, 
+                "cool": 3
+            }, 
+            "review_count": 8, 
+            "name": "Michael P.", 
+            "url": "http://www.yelp.com/user_details?userid=dMEMCWkbmi2hzr24_9J-ZA", 
+            "average_stars": 4.375, 
+            "user_id": "dMEMCWkbmi2hzr24_9J-ZA", 
+            "type": "user"
+        }, 
+        {
+            "votes": {
+                "funny": 28, 
+                "useful": 145, 
+                "cool": 33
+            }, 
+            "review_count": 78, 
+            "name": "Dan S.", 
+            "url": "http://www.yelp.com/user_details?userid=Y_v3O9q_-vSOk25cOEjIkQ", 
+            "average_stars": 3.2948717948717898, 
+            "user_id": "Y_v3O9q_-vSOk25cOEjIkQ", 
+            "type": "user"
+        }, 
+        {
+            "votes": {
+                "funny": 3, 
+                "useful": 25, 
+                "cool": 4
+            }, 
+            "review_count": 21, 
+            "name": "cat u.", 
+            "url": "http://www.yelp.com/user_details?userid=7RsdY4_1Bb_bCf5ZbK6tyQ", 
+            "average_stars": 3.0, 
+            "user_id": "7RsdY4_1Bb_bCf5ZbK6tyQ", 
+            "type": "user"
+        }, 
+        {
+            "votes": {
+                "funny": 0, 
+                "useful": 2, 
+                "cool": 0
+            }, 
+            "review_count": 9, 
+            "name": "Greg A.", 
+            "url": "http://www.yelp.com/user_details?userid=oNNAypob-Pj7j7qF68DQ7A", 
+            "average_stars": 3.4444444444444402, 
+            "user_id": "oNNAypob-Pj7j7qF68DQ7A", 
+            "type": "user"
+        }, 
+        {
+            "votes": {
+                "funny": 7, 
+                "useful": 7, 
+                "cool": 5
+            }, 
+            "review_count": 27, 
+            "name": "Ryan S.", 
+            "url": "http://www.yelp.com/user_details?userid=SUsFQqcuTl7yYkW_Ic_XLw", 
+            "average_stars": 3.5925925925925899, 
+            "user_id": "SUsFQqcuTl7yYkW_Ic_XLw", 
+            "type": "user"
+        }, 
+        {
+            "votes": {
+                "funny": 0, 
+                "useful": 0, 
+                "cool": 0
+            }, 
+            "review_count": 2, 
+            "name": "Richard L.", 
+            "url": "http://www.yelp.com/user_details?userid=MyuQW9aJ1-54tIOQCeUiMw", 
+            "average_stars": 5.0, 
+            "user_id": "MyuQW9aJ1-54tIOQCeUiMw", 
+            "type": "user"
+        }, 
+        {
+            "votes": {
+                "funny": 5, 
+                "useful": 52, 
+                "cool": 23
+            }, 
+            "review_count": 17, 
+            "name": "Square R.", 
+            "url": "http://www.yelp.com/user_details?userid=b1OmuM_0FwDbWMs3XWJrAg", 
+            "average_stars": 4.2352941176470598, 
+            "user_id": "b1OmuM_0FwDbWMs3XWJrAg", 
+            "type": "user"
+        }, 
+        {
+            "votes": {
+                "funny": 16, 
+                "useful": 42, 
+                "cool": 22
+            }, 
+            "review_count": 37, 
+            "name": "SoCal Mom D.", 
+            "url": "http://www.yelp.com/user_details?userid=KJsLaCGHvyJgAMaombuXSw", 
+            "average_stars": 3.5675675675675702, 
+            "user_id": "KJsLaCGHvyJgAMaombuXSw", 
+            "type": "user"
+        }, 
+        {
+            "votes": {
+                "funny": 2, 
+                "useful": 4, 
+                "cool": 3
+            }, 
+            "review_count": 6, 
+            "name": "Tina M.", 
+            "url": "http://www.yelp.com/user_details?userid=ssXwMsdDH77-GsFDlXo_FQ", 
+            "average_stars": 2.8333333333333299, 
+            "user_id": "ssXwMsdDH77-GsFDlXo_FQ", 
+            "type": "user"
+        }, 
+        {
+            "votes": {
+                "funny": 0, 
+                "useful": 0, 
+                "cool": 0
+            }, 
+            "review_count": 1, 
+            "name": "Scotty G.", 
+            "url": "http://www.yelp.com/user_details?userid=nf7saiuoot9LwVX0-krBig", 
+            "average_stars": 5.0, 
+            "user_id": "nf7saiuoot9LwVX0-krBig", 
+            "type": "user"
+        }, 
+        {
+            "votes": {
+                "funny": 7, 
+                "useful": 8, 
+                "cool": 7
+            }, 
+            "review_count": 56, 
+            "name": "Kevin P.", 
+            "url": "http://www.yelp.com/user_details?userid=-5EHi9ORYRZK_TIWi6YvqA", 
+            "average_stars": 3.5714285714285698, 
+            "user_id": "-5EHi9ORYRZK_TIWi6YvqA", 
+            "type": "user"
+        }, 
+        {
+            "votes": {
+                "funny": 0, 
+                "useful": 1, 
+                "cool": 0
+            }, 
+            "review_count": 5, 
+            "name": "Brittany H.", 
+            "url": "http://www.yelp.com/user_details?userid=QCUuzuM5u4JR2Ag9cz0zxg", 
+            "average_stars": 3.7999999999999998, 
+            "user_id": "QCUuzuM5u4JR2Ag9cz0zxg", 
+            "type": "user"
+        }, 
+        {
+            "votes": {
+                "funny": 1, 
+                "useful": 1, 
+                "cool": 1
+            }, 
+            "review_count": 5, 
+            "name": "Robin B.", 
+            "url": "http://www.yelp.com/user_details?userid=EEemG1Iy159HsiOr0USG0Q", 
+            "average_stars": 4.2000000000000002, 
+            "user_id": "EEemG1Iy159HsiOr0USG0Q", 
+            "type": "user"
+        }, 
+        {
+            "votes": {
+                "funny": 9, 
+                "useful": 17, 
+                "cool": 5
+            }, 
+            "review_count": 34, 
+            "name": "Sherry T.", 
+            "url": "http://www.yelp.com/user_details?userid=b2FW7_WKey9g1hErCxzK_Q", 
+            "average_stars": 3.5588235294117601, 
+            "user_id": "b2FW7_WKey9g1hErCxzK_Q", 
+            "type": "user"
+        }, 
+        {
+            "votes": {
+                "funny": 3, 
+                "useful": 8, 
+                "cool": 0
+            }, 
+            "review_count": 4, 
+            "name": "Jonathan B.", 
+            "url": "http://www.yelp.com/user_details?userid=4VQ4UVoAyJIueQQCFUAU7g", 
+            "average_stars": 3.0, 
+            "user_id": "4VQ4UVoAyJIueQQCFUAU7g", 
+            "type": "user"
+        }, 
+        {
+            "votes": {
+                "funny": 1, 
+                "useful": 5, 
+                "cool": 2
+            }, 
+            "review_count": 10, 
+            "name": "J.D S.", 
+            "url": "http://www.yelp.com/user_details?userid=RYds5lSzVeQBRGyxaF0_hA", 
+            "average_stars": 3.7999999999999998, 
+            "user_id": "RYds5lSzVeQBRGyxaF0_hA", 
+            "type": "user"
+        }, 
+        {
+            "votes": {
+                "funny": 0, 
+                "useful": 4, 
+                "cool": 0
+            }, 
+            "review_count": 2, 
+            "name": "Kimarie C.", 
+            "url": "http://www.yelp.com/user_details?userid=uoFFZpa2X0P5Aj8fSYtdUQ", 
+            "average_stars": 5.0, 
+            "user_id": "uoFFZpa2X0P5Aj8fSYtdUQ", 
+            "type": "user"
+        }, 
+        {
+            "votes": {
+                "funny": 28, 
+                "useful": 58, 
+                "cool": 25
+            }, 
+            "review_count": 73, 
+            "name": "Lauren C.", 
+            "url": "http://www.yelp.com/user_details?userid=_hYzf79Ekb9vS7socFhFSw", 
+            "average_stars": 3.8493150684931501, 
+            "user_id": "_hYzf79Ekb9vS7socFhFSw", 
+            "type": "user"
+        }, 
+        {
+            "votes": {
+                "funny": 6277, 
+                "useful": 4698, 
+                "cool": 5325
+            }, 
+            "review_count": 1049, 
+            "name": "Maria D.", 
+            "url": "http://www.yelp.com/user_details?userid=XHuNSjrPA3Vyi7n4iVhZaQ", 
+            "average_stars": 3.7654909437559598, 
+            "user_id": "XHuNSjrPA3Vyi7n4iVhZaQ", 
+            "type": "user"
+        }, 
+        {
+            "votes": {
+                "funny": 61, 
+                "useful": 203, 
+                "cool": 72
+            }, 
+            "review_count": 139, 
+            "name": "Kenny H.", 
+            "url": "http://www.yelp.com/user_details?userid=6-5g6_91AFXBxXho834UGw", 
+            "average_stars": 3.2805755395683498, 
+            "user_id": "6-5g6_91AFXBxXho834UGw", 
+            "type": "user"
+        }, 
+        {
+            "votes": {
+                "funny": 11, 
+                "useful": 24, 
+                "cool": 14
+            }, 
+            "review_count": 17, 
+            "name": "Beanie L.", 
+            "url": "http://www.yelp.com/user_details?userid=fVWk4-DTmeO0F8sDVDV0pQ", 
+            "average_stars": 3.4117647058823501, 
+            "user_id": "fVWk4-DTmeO0F8sDVDV0pQ", 
+            "type": "user"
+        }, 
+        {
+            "votes": {
+                "funny": 1, 
+                "useful": 3, 
+                "cool": 0
+            }, 
+            "review_count": 12, 
+            "name": "Aamir M.", 
+            "url": "http://www.yelp.com/user_details?userid=SDG5zHjQcoSP9oJ0VzVHmg", 
+            "average_stars": 4.0833333333333304, 
+            "user_id": "SDG5zHjQcoSP9oJ0VzVHmg", 
+            "type": "user"
+        }, 
+        {
+            "votes": {
+                "funny": 0, 
+                "useful": 1, 
+                "cool": 0
+            }, 
+            "review_count": 7, 
+            "name": "C K.", 
+            "url": "http://www.yelp.com/user_details?userid=FpHXTTTbcGxX4MTmIcWvsg", 
+            "average_stars": 4.3333333333333304, 
+            "user_id": "FpHXTTTbcGxX4MTmIcWvsg", 
+            "type": "user"
+        }, 
+        {
+            "votes": {
+                "funny": 0, 
+                "useful": 0, 
+                "cool": 0
+            }, 
+            "review_count": 1, 
+            "name": "Jessica L.", 
+            "url": "http://www.yelp.com/user_details?userid=YPBxAEOVOcYoI_q3AhLPhA", 
+            "average_stars": 3.0, 
+            "user_id": "YPBxAEOVOcYoI_q3AhLPhA", 
+            "type": "user"
+        }, 
+        {
+            "votes": {
+                "funny": 1, 
+                "useful": 14, 
+                "cool": 4
+            }, 
+            "review_count": 15, 
+            "name": "Jean H.", 
+            "url": "http://www.yelp.com/user_details?userid=E1D3iqn5os0mSOykrVt2Ng", 
+            "average_stars": 3.6666666666666701, 
+            "user_id": "E1D3iqn5os0mSOykrVt2Ng", 
+            "type": "user"
+        }, 
+        {
+            "votes": {
+                "funny": 0, 
+                "useful": 2, 
+                "cool": 0
+            }, 
+            "review_count": 3, 
+            "name": "Julie M.", 
+            "url": "http://www.yelp.com/user_details?userid=FpH2mvc_2reDX8tGA3GZ0g", 
+            "average_stars": 3.6666666666666701, 
+            "user_id": "FpH2mvc_2reDX8tGA3GZ0g", 
+            "type": "user"
+        }, 
+        {
+            "votes": {
+                "funny": 2, 
+                "useful": 3, 
+                "cool": 0
+            }, 
+            "review_count": 6, 
+            "name": "l.a. T.", 
+            "url": "http://www.yelp.com/user_details?userid=z_PUtJxXi14Qr89J4A9oJQ", 
+            "average_stars": 3.6666666666666701, 
+            "user_id": "z_PUtJxXi14Qr89J4A9oJQ", 
+            "type": "user"
+        }, 
+        {
+            "votes": {
+                "funny": 1, 
+                "useful": 6, 
+                "cool": 2
+            }, 
+            "review_count": 13, 
+            "name": "Arturo R.", 
+            "url": "http://www.yelp.com/user_details?userid=Hi2aGtSrK0asg8WYN6TIzg", 
+            "average_stars": 3.6923076923076898, 
+            "user_id": "Hi2aGtSrK0asg8WYN6TIzg", 
+            "type": "user"
+        }, 
+        {
+            "votes": {
+                "funny": 1, 
+                "useful": 15, 
+                "cool": 0
+            }, 
+            "review_count": 6, 
+            "name": "Rick H.", 
+            "url": "http://www.yelp.com/user_details?userid=PEdbmM8T0gh2DDHRihTJ6Q", 
+            "average_stars": 2.5, 
+            "user_id": "PEdbmM8T0gh2DDHRihTJ6Q", 
+            "type": "user"
+        }, 
+        {
+            "votes": {
+                "funny": 108, 
+                "useful": 350, 
+                "cool": 184
+            }, 
+            "review_count": 243, 
+            "name": "Jasmine T.", 
+            "url": "http://www.yelp.com/user_details?userid=0NZe-dGGvEDiquDawAd1wg", 
+            "average_stars": 3.76131687242798, 
+            "user_id": "0NZe-dGGvEDiquDawAd1wg", 
+            "type": "user"
+        }, 
+        {
+            "votes": {
+                "funny": 4, 
+                "useful": 15, 
+                "cool": 5
+            }, 
+            "review_count": 37, 
+            "name": "Lori R.", 
+            "url": "http://www.yelp.com/user_details?userid=YSh7Kw3jEPwiQ784FmqzIA", 
+            "average_stars": 3.86486486486486, 
+            "user_id": "YSh7Kw3jEPwiQ784FmqzIA", 
+            "type": "user"
+        }, 
+        {
+            "votes": {
+                "funny": 112, 
+                "useful": 138, 
+                "cool": 85
+            }, 
+            "review_count": 87, 
+            "name": "Eric I.", 
+            "url": "http://www.yelp.com/user_details?userid=Srjx0BfI8gT19qxqgX9TQw", 
+            "average_stars": 3.3908045977011501, 
+            "user_id": "Srjx0BfI8gT19qxqgX9TQw", 
+            "type": "user"
+        }, 
+        {
+            "votes": {
+                "funny": 28, 
+                "useful": 78, 
+                "cool": 31
+            }, 
+            "review_count": 102, 
+            "name": "Stephen M.", 
+            "url": "http://www.yelp.com/user_details?userid=q6T6E6cY7OGBeettXR5DxA", 
+            "average_stars": 3.5980392156862702, 
+            "user_id": "q6T6E6cY7OGBeettXR5DxA", 
+            "type": "user"
+        }, 
+        {
+            "votes": {
+                "funny": 0, 
+                "useful": 2, 
+                "cool": 0
+            }, 
+            "review_count": 3, 
+            "name": "Drew G.", 
+            "url": "http://www.yelp.com/user_details?userid=DyI8zWVuAC8XhR31ndcqGw", 
+            "average_stars": 3.3333333333333299, 
+            "user_id": "DyI8zWVuAC8XhR31ndcqGw", 
+            "type": "user"
+        }, 
+        {
+            "votes": {
+                "funny": 2, 
+                "useful": 6, 
+                "cool": 1
+            }, 
+            "review_count": 6, 
+            "name": "charles S.", 
+            "url": "http://www.yelp.com/user_details?userid=48ym5tQNq2Ej-HPgSPGtJQ", 
+            "average_stars": 2.5, 
+            "user_id": "48ym5tQNq2Ej-HPgSPGtJQ", 
+            "type": "user"
+        }, 
+        {
+            "votes": {
+                "funny": 0, 
+                "useful": 5, 
+                "cool": 1
+            }, 
+            "review_count": 5, 
+            "name": "roselia i.", 
+            "url": "http://www.yelp.com/user_details?userid=Oq1m82Sp26FXAvg7Bw4Ouw", 
+            "average_stars": 3.2000000000000002, 
+            "user_id": "Oq1m82Sp26FXAvg7Bw4Ouw", 
+            "type": "user"
+        }, 
+        {
+            "votes": {
+                "funny": 0, 
+                "useful": 0, 
+                "cool": 0
+            }, 
+            "review_count": 1, 
+            "name": "Bill M.", 
+            "url": "http://www.yelp.com/user_details?userid=e2IYfOJs-SI7U8nczkFnPQ", 
+            "average_stars": 1.0, 
+            "user_id": "e2IYfOJs-SI7U8nczkFnPQ", 
+            "type": "user"
+        }, 
+        {
+            "votes": {
+                "funny": 34, 
+                "useful": 84, 
+                "cool": 35
+            }, 
+            "review_count": 73, 
+            "name": "christin d.", 
+            "url": "http://www.yelp.com/user_details?userid=h80MY6-lKaS1alxTs32ebw", 
+            "average_stars": 3.8356164383561602, 
+            "user_id": "h80MY6-lKaS1alxTs32ebw", 
+            "type": "user"
+        }, 
+        {
+            "votes": {
+                "funny": 3, 
+                "useful": 4, 
+                "cool": 2
+            }, 
+            "review_count": 29, 
+            "name": "John D.", 
+            "url": "http://www.yelp.com/user_details?userid=PRaO6fTMIphiYdfL-djVyw", 
+            "average_stars": 3.0714285714285698, 
+            "user_id": "PRaO6fTMIphiYdfL-djVyw", 
+            "type": "user"
+        }, 
+        {
+            "votes": {
+                "funny": 51, 
+                "useful": 94, 
+                "cool": 53
+            }, 
+            "review_count": 96, 
+            "name": "Willis C.", 
+            "url": "http://www.yelp.com/user_details?userid=gRnvdRFjPeM5qzoK89GJVQ", 
+            "average_stars": 3.21875, 
+            "user_id": "gRnvdRFjPeM5qzoK89GJVQ", 
+            "type": "user"
+        }, 
+        {
+            "votes": {
+                "funny": 16, 
+                "useful": 42, 
+                "cool": 27
+            }, 
+            "review_count": 8, 
+            "name": "Melissa M.", 
+            "url": "http://www.yelp.com/user_details?userid=96rdvHoImPPkNsoxTiP7cA", 
+            "average_stars": 3.875, 
+            "user_id": "96rdvHoImPPkNsoxTiP7cA", 
+            "type": "user"
+        }, 
+        {
+            "votes": {
+                "funny": 8, 
+                "useful": 34, 
+                "cool": 13
+            }, 
+            "review_count": 85, 
+            "name": "Mike B.", 
+            "url": "http://www.yelp.com/user_details?userid=-C1axHDk0GJCiaKvsNR3eA", 
+            "average_stars": 3.45882352941176, 
+            "user_id": "-C1axHDk0GJCiaKvsNR3eA", 
+            "type": "user"
+        }, 
+        {
+            "votes": {
+                "funny": 0, 
+                "useful": 1, 
+                "cool": 0
+            }, 
+            "review_count": 1, 
+            "name": "M P.", 
+            "url": "http://www.yelp.com/user_details?userid=ahMsFliRRdatcEPjVTMzWQ", 
+            "average_stars": 1.0, 
+            "user_id": "ahMsFliRRdatcEPjVTMzWQ", 
+            "type": "user"
+        }, 
+        {
+            "votes": {
+                "funny": 3, 
+                "useful": 44, 
+                "cool": 3
+            }, 
+            "review_count": 48, 
+            "name": "Gindy N.", 
+            "url": "http://www.yelp.com/user_details?userid=m5juHquIlyi_1CvfneDuZg", 
+            "average_stars": 3.9583333333333299, 
+            "user_id": "m5juHquIlyi_1CvfneDuZg", 
+            "type": "user"
+        }, 
+        {
+            "votes": {
+                "funny": 0, 
+                "useful": 3, 
+                "cool": 0
+            }, 
+            "review_count": 12, 
+            "name": "Matt C.", 
+            "url": "http://www.yelp.com/user_details?userid=3DbCmaEPF2n5AUE-muo1iA", 
+            "average_stars": 3.8999999999999999, 
+            "user_id": "3DbCmaEPF2n5AUE-muo1iA", 
+            "type": "user"
+        }, 
+        {
+            "votes": {
+                "funny": 3, 
+                "useful": 15, 
+                "cool": 11
+            }, 
+            "review_count": 16, 
+            "name": "Catherine F.", 
+            "url": "http://www.yelp.com/user_details?userid=XO1D-qihZwWmbci6nXbeeQ", 
+            "average_stars": 4.06666666666667, 
+            "user_id": "XO1D-qihZwWmbci6nXbeeQ", 
+            "type": "user"
+        }, 
+        {
+            "votes": {
+                "funny": 3, 
+                "useful": 17, 
+                "cool": 4
+            }, 
+            "review_count": 37, 
+            "name": "Erin C.", 
+            "url": "http://www.yelp.com/user_details?userid=QScfKdcxsa7t5qfE0Ev0Cw", 
+            "average_stars": 3.8378378378378399, 
+            "user_id": "QScfKdcxsa7t5qfE0Ev0Cw", 
+            "type": "user"
+        }, 
+        {
+            "votes": {
+                "funny": 7, 
+                "useful": 25, 
+                "cool": 9
+            }, 
+            "review_count": 47, 
+            "name": "Eric H.", 
+            "url": "http://www.yelp.com/user_details?userid=zUnw4I4LhYN5MX4EKYx1Kg", 
+            "average_stars": 4.2978723404255303, 
+            "user_id": "zUnw4I4LhYN5MX4EKYx1Kg", 
+            "type": "user"
+        }, 
+        {
+            "votes": {
+                "funny": 8709, 
+                "useful": 9312, 
+                "cool": 7925
+            }, 
+            "review_count": 951, 
+            "name": "Danny W.", 
+            "url": "http://www.yelp.com/user_details?userid=IU86PZPgTDCFwJEuAg2j7g", 
+            "average_stars": 3.93901156677182, 
+            "user_id": "IU86PZPgTDCFwJEuAg2j7g", 
+            "type": "user"
+        }, 
+        {
+            "votes": {
+                "funny": 24, 
+                "useful": 82, 
+                "cool": 38
+            }, 
+            "review_count": 77, 
+            "name": "Lawrence N.", 
+            "url": "http://www.yelp.com/user_details?userid=yqnNj_nJgGvtDO3WeDK2QA", 
+            "average_stars": 3.62337662337662, 
+            "user_id": "yqnNj_nJgGvtDO3WeDK2QA", 
+            "type": "user"
+        }, 
+        {
+            "votes": {
+                "funny": 184, 
+                "useful": 98, 
+                "cool": 117
+            }, 
+            "review_count": 55, 
+            "name": "Chang K.", 
+            "url": "http://www.yelp.com/user_details?userid=IZg74TR3scb_ueZ5yOLlTQ", 
+            "average_stars": 4.0925925925925899, 
+            "user_id": "IZg74TR3scb_ueZ5yOLlTQ", 
+            "type": "user"
+        }, 
+        {
+            "votes": {
+                "funny": 0, 
+                "useful": 6, 
+                "cool": 1
+            }, 
+            "review_count": 4, 
+            "name": "Carol L.", 
+            "url": "http://www.yelp.com/user_details?userid=jOfu3qQ-fw6hyLmb0-cBEw", 
+            "average_stars": 3.75, 
+            "user_id": "jOfu3qQ-fw6hyLmb0-cBEw", 
+            "type": "user"
+        }, 
+        {
+            "votes": {
+                "funny": 0, 
+                "useful": 0, 
+                "cool": 0
+            }, 
+            "review_count": 1, 
+            "name": "Ronyde R.", 
+            "url": "http://www.yelp.com/user_details?userid=9fMogxnnd0m9_FKSi-4AoQ", 
+            "average_stars": 5.0, 
+            "user_id": "9fMogxnnd0m9_FKSi-4AoQ", 
+            "type": "user"
+        }, 
+        {
+            "votes": {
+                "funny": 0, 
+                "useful": 3, 
+                "cool": 6
+            }, 
+            "review_count": 11, 
+            "name": "Chanta' C.", 
+            "url": "http://www.yelp.com/user_details?userid=DH7SFU5dZmUqAjRkTf-AGQ", 
+            "average_stars": 4.5454545454545503, 
+            "user_id": "DH7SFU5dZmUqAjRkTf-AGQ", 
+            "type": "user"
+        }, 
+        {
+            "votes": {
+                "funny": 5, 
+                "useful": 17, 
+                "cool": 13
+            }, 
+            "review_count": 9, 
+            "name": "Sol H.", 
+            "url": "http://www.yelp.com/user_details?userid=tDDfNIksDKAu1WIPeGulmg", 
+            "average_stars": 3.75, 
+            "user_id": "tDDfNIksDKAu1WIPeGulmg", 
+            "type": "user"
+        }, 
+        {
+            "votes": {
+                "funny": 177, 
+                "useful": 242, 
+                "cool": 200
+            }, 
+            "review_count": 105, 
+            "name": "Valerie M.", 
+            "url": "http://www.yelp.com/user_details?userid=zNG2RG6Ny3pCjL7tH55zjg", 
+            "average_stars": 3.7619047619047601, 
+            "user_id": "zNG2RG6Ny3pCjL7tH55zjg", 
+            "type": "user"
+        }, 
+        {
+            "votes": {
+                "funny": 2, 
+                "useful": 14, 
+                "cool": 5
+            }, 
+            "review_count": 28, 
+            "name": "Yelper Y.", 
+            "url": "http://www.yelp.com/user_details?userid=QoBgGblUrm4k35hjR3pxKQ", 
+            "average_stars": 4.4615384615384599, 
+            "user_id": "QoBgGblUrm4k35hjR3pxKQ", 
+            "type": "user"
+        }, 
+        {
+            "votes": {
+                "funny": 0, 
+                "useful": 0, 
+                "cool": 0
+            }, 
+            "review_count": 1, 
+            "name": "Dan M.", 
+            "url": "http://www.yelp.com/user_details?userid=Yn5DiPdAcUtMrG15l7tBeg", 
+            "average_stars": 1.0, 
+            "user_id": "Yn5DiPdAcUtMrG15l7tBeg", 
+            "type": "user"
+        }, 
+        {
+            "votes": {
+                "funny": 56, 
+                "useful": 139, 
+                "cool": 59
+            }, 
+            "review_count": 99, 
+            "name": "Michael M.", 
+            "url": "http://www.yelp.com/user_details?userid=l1PQTDX5tkaXhbBZdAefIQ", 
+            "average_stars": 3.5050505050505101, 
+            "user_id": "l1PQTDX5tkaXhbBZdAefIQ", 
+            "type": "user"
+        }, 
+        {
+            "votes": {
+                "funny": 19, 
+                "useful": 26, 
+                "cool": 24
+            }, 
+            "review_count": 19, 
+            "name": "H.V. P.", 
+            "url": "http://www.yelp.com/user_details?userid=VuErI-9d-Z9q4iU-PxwHhQ", 
+            "average_stars": 2.7368421052631602, 
+            "user_id": "VuErI-9d-Z9q4iU-PxwHhQ", 
+            "type": "user"
+        }, 
+        {
+            "votes": {
+                "funny": 278, 
+                "useful": 427, 
+                "cool": 415
+            }, 
+            "review_count": 183, 
+            "name": "Keoni W.", 
+            "url": "http://www.yelp.com/user_details?userid=nQBtN8wiseNkqQkzPb0zKQ", 
+            "average_stars": 3.7595628415300499, 
+            "user_id": "nQBtN8wiseNkqQkzPb0zKQ", 
+            "type": "user"
+        }, 
+        {
+            "votes": {
+                "funny": 1, 
+                "useful": 1, 
+                "cool": 0
+            }, 
+            "review_count": 2, 
+            "name": "Kimberly D.", 
+            "url": "http://www.yelp.com/user_details?userid=93NGtlYTIghF8gKy2Dbb_Q", 
+            "average_stars": 3.5, 
+            "user_id": "93NGtlYTIghF8gKy2Dbb_Q", 
+            "type": "user"
+        }
+    ]
+}
