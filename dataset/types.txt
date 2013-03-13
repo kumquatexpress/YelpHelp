@@ -1,0 +1,7 @@
+{
+"user"=>[["votes", Hash], ["user_id", String], ["name", String], ["url", String], ["average_stars", Float], ["review_count", Fixnum], ["type", String]], 
+
+"review"=>[["votes", Hash], ["user_id", String], ["review_id", String], ["stars", Fixnum], ["date", String], ["text", String], ["type", String], ["business_id", String]], 
+
+"business"=>[["business_id", String], ["full_address", String], ["schools", Array], ["open", TrueClass], ["categories", Array], ["photo_url", String], ["city", String], ["review_count", Fixnum], ["name", String], ["neighborhoods", Array], ["url", String], ["longitude", Float], ["state", String], ["stars", Float], ["latitude", Float], ["type", String]]
+}
