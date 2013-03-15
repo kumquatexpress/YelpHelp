@@ -1,0 +1,3 @@
+http://fjavieralba.com/basic-sentiment-analysis-with-python.html
+
+more to be added...
