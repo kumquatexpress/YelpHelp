@@ -1,1 +1,3 @@
 http://nltk.org/install.html
+
+also, install BeautifulSoup
