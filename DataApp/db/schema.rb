@@ -11,9 +11,10 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130314230928) do
+ActiveRecord::Schema.define(:version => 20130315195950) do
 
-  create_table "businesses", :primary_key => "business_id", :force => true do |t|
+  create_table "businesses", :id => false, :force => true do |t|
+    t.string   "business_id"
     t.string   "full_address"
     t.string   "schools"
     t.boolean  "open"
@@ -32,7 +33,8 @@ ActiveRecord::Schema.define(:version => 20130314230928) do
     t.datetime "updated_at",    :null => false
   end
 
-  create_table "reviews", :primary_key => "review_id", :force => true do |t|
+  create_table "reviews", :id => false, :force => true do |t|
+    t.string   "review_id"
     t.string   "yelp_user_id"
     t.integer  "stars"
     t.string   "date"
@@ -41,6 +43,9 @@ ActiveRecord::Schema.define(:version => 20130314230928) do
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
   end
+
+  add_index "reviews", ["business_id"], :name => "index_reviews_on_business_id"
+  add_index "reviews", ["yelp_user_id"], :name => "index_reviews_on_yelp_user_id"
 
   create_table "users", :force => true do |t|
     t.string   "email",                  :default => "", :null => false
@@ -70,7 +75,11 @@ ActiveRecord::Schema.define(:version => 20130314230928) do
     t.datetime "updated_at",   :null => false
   end
 
-  create_table "yelp_users", :primary_key => "user_id", :force => true do |t|
+  add_index "votes", ["review_id"], :name => "index_votes_on_review_id"
+  add_index "votes", ["yelp_user_id"], :name => "index_votes_on_yelp_user_id"
+
+  create_table "yelp_users", :id => false, :force => true do |t|
+    t.string   "user_id"
     t.string   "name"
     t.string   "url"
     t.float    "average_stars"
