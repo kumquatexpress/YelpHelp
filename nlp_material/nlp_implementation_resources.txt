@@ -1,0 +1,5 @@
+http://fjavieralba.com/basic-sentiment-analysis-with-python.html
+
+http://nltk.org/book/
+
+more to be added...
