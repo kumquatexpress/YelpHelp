@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  cool: 1
+  funny: 1
+  useful: 1
+  yelp_user_id: 1
+  review_id: 1
+
+two:
+  cool: 1
+  funny: 1
+  useful: 1
+  yelp_user_id: 1
+  review_id: 1

@@ -1,0 +1,14 @@
+*/yelp_academic_dataset.json
+*/Splits/*
+*.swp
+*.sublime*
+
+DataApp/.bundle
+
+DataApp/db/*.sqlite3
+
+DataApp/log/*.log
+DataApp/tmp
+
+DataApp/config/database.yml
+
