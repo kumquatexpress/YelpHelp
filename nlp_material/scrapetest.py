@@ -2,6 +2,9 @@ from bs4 import BeautifulSoup
 import urllib2
 from nltk.corpus import movie_reviews
 import nltk
+import pickle
+import nltk.data
+import re
 
 def get_reviews():
     soup = BeautifulSoup(urllib2.urlopen('http://www.yelp.com/user_details?userid=93NGtlYTIghF8gKy2Dbb_Q').read())
@@ -42,28 +45,17 @@ word_features = get_word_features(get_words(m_reviews))
 print "training_set"
 training_set = nltk.classify.apply_features(extract_features, m_reviews)
 print "classifier"
-classifier = nltk.NaiveBayesClassifier.train(training_set)
+try:
+    classifier = pickle.load(open("classifier.p", "rb"))
+except:
+    classifier = nltk.NaiveBayesClassifier.train(training_set)
+    pickle.dump(classifier, open("classifier.p", "wb"))
 
-
-#soup = BeautifulSoup(urllib2.urlopen('http://www.timeanddate.com/worldclock/astronomy.html?n=78').read())
-
-#for row in soup('table', {'class' : 'spad'})[0].tbody('tr'):
-#    tds = row('td')
-#    print tds
-#    print tds[0].string, tds[1].string
-
-
-
-#print soup('div', {'class' : 'review_comment'})[1].get_text()
-
-#for  row in soup('div', {'class' : 'review_comment'}):
-#    print row.get_text()
-#    div = row('div')
-#    print div
-
-#rows = [row for  row in soup('div', {'class' : 'review_comment'})]
-
-#print rows
-
-#for row in soup('div', {'class' : 'review_comment'}):
-#    print row
+for review in reviews:
+    
+    print "\n\nReview:\n"
+    tokenizer = nltk.data.load('tokenizers/punkt/english.pickle')
+    for sentence in tokenizer.tokenize(review):
+        print classifier.classify(extract_features(sentence.split())), "\t", sentence
+        print extract_features(sentence.split())
+    print "\n\n"
