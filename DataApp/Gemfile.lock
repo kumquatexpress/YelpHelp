@@ -95,6 +95,9 @@ GEM
       rack
     rack-test (0.6.2)
       rack (>= 1.0)
+    rack-webconsole (0.1.2)
+      json
+      rack
     rails (3.2.8)
       actionmailer (= 3.2.8)
       actionpack (= 3.2.8)
@@ -103,7 +106,6 @@ GEM
       activesupport (= 3.2.8)
       bundler (~> 1.0)
       railties (= 3.2.8)
-    rails-web-console (0.2.0)
     rails_admin (0.4.5)
       bootstrap-sass (~> 2.2)
       builder (~> 3.0)
@@ -174,8 +176,8 @@ DEPENDENCIES
   jquery-rails
   kaminari
   mysql2
+  rack-webconsole
   rails (= 3.2.8)
-  rails-web-console
   rails_admin
   sass-rails (~> 3.2.3)
   sqlite3
