@@ -10,5 +10,4 @@ DataApp/db/*.sqlite3
 DataApp/log/*.log
 DataApp/tmp
 
-DataApp/config/database.yml
 
