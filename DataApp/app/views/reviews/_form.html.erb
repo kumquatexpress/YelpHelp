@@ -1,0 +1,44 @@
+<%= form_for @review, :html => { :class => 'form-horizontal' } do |f| %>
+  <div class="control-group">
+    <%= f.label :review_id, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :review_id, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :yelp_user_id, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :yelp_user_id, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :stars, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.number_field :stars, :class => 'number_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :date, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :date, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :text, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :text, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :business_id, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :business_id, :class => 'text_field' %>
+    </div>
+  </div>
+
+  <div class="form-actions">
+    <%= f.submit nil, :class => 'btn btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                reviews_path, :class => 'btn' %>
+  </div>
+<% end %>

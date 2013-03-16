@@ -6,5 +6,10 @@ class Review < ActiveRecord::Base
 	belongs_to :business
 
 	attr_accessible :business_id, :date, :review_id, :stars, 
-	:text, :type, :yelp_user_id
+	:text, :yelp_user_id
+
+	def self.stars(num)
+		where(:stars => num)
+	end
+
 end

@@ -1,0 +1,25 @@
+<%- model_class = Review -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human %></h1>
+</div>
+
+<dl class="dl-horizontal">
+  <dt><strong><%= model_class.human_attribute_name(:review_id) %>:</strong></dt>
+  <dd><%= @review.review_id %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:yelp_user_id) %>:</strong></dt>
+  <dd><%= @review.yelp_user_id %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:stars) %>:</strong></dt>
+  <dd><%= @review.stars %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:date) %>:</strong></dt>
+  <dd><%= @review.date %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:text) %>:</strong></dt>
+  <dd><%= @review.text %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:business_id) %>:</strong></dt>
+  <dd><%= @review.business_id %></dd>
+</dl>
+
+<div class="form-actions">
+  <%= link_to t('.back', :default => t("helpers.links.back")),
+              reviews_path, :class => 'btn'  %>
+
+</div>

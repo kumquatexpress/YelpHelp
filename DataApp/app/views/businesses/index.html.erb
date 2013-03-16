@@ -1,0 +1,56 @@
+<%- model_class = Business -%>
+<div class="container-fluid">
+    <div class="page-header">
+      <h1><%=t '.title', :default => model_class.model_name.human.pluralize %></h1>
+    </div>
+    <table class="table table-striped span12">
+      <thead>
+        <tr>
+          <th><%= model_class.human_attribute_name(:id) %></th>
+          <th><%= model_class.human_attribute_name(:business_id) %></th>
+          <th><%= model_class.human_attribute_name(:full_address) %></th>
+          <th><%= model_class.human_attribute_name(:schools) %></th>
+          <th><%= model_class.human_attribute_name(:open) %></th>
+          <th><%= model_class.human_attribute_name(:categories) %></th>
+          <th><%= model_class.human_attribute_name(:photo_url) %></th>
+          <th><%= model_class.human_attribute_name(:city) %></th>
+          <th><%= model_class.human_attribute_name(:review_count) %></th>
+          <th><%= model_class.human_attribute_name(:name) %></th>
+          <th><%= model_class.human_attribute_name(:neighborhoods) %></th>
+          <th><%= model_class.human_attribute_name(:url) %></th>
+          <th><%= model_class.human_attribute_name(:longitude) %></th>
+          <th><%= model_class.human_attribute_name(:state) %></th>
+          <th><%= model_class.human_attribute_name(:stars) %></th>
+          <th><%= model_class.human_attribute_name(:latitude) %></th>
+          <th><%= model_class.human_attribute_name(:created_at) %></th>
+          <th><%=t '.actions', :default => t("helpers.actions") %></th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @businesses.each do |business| %>
+          <tr>
+            <td><%= link_to business.id, business_path(business) %></td>
+            <td><%= business.business_id %></td>
+            <td><%= business.full_address %></td>
+            <td><%= business.schools %></td>
+            <td><%= business.open %></td>
+            <td><%= business.categories %></td>
+            <td><%= business.photo_url %></td>
+            <td><%= business.city %></td>
+            <td><%= business.review_count %></td>
+            <td><%= business.name %></td>
+            <td><%= business.neighborhoods %></td>
+            <td><%= business.url %></td>
+            <td><%= business.longitude %></td>
+            <td><%= business.state %></td>
+            <td><%= business.stars %></td>
+            <td><%= business.latitude %></td>
+            <td><%=l business.created_at %></td>
+            <td>
+              <%= link_to "Show", business, :class => 'btn' %>
+            </td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+</div>

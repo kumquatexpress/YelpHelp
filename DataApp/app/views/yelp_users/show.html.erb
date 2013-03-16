@@ -1,0 +1,22 @@
+<%- model_class = YelpUser -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human %></h1>
+</div>
+
+<dl class="dl-horizontal">
+  <dt><strong><%= model_class.human_attribute_name(:user_id) %>:</strong></dt>
+  <dd><%= @yelp_user.user_id %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:name) %>:</strong></dt>
+  <dd><%= @yelp_user.name %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:url) %>:</strong></dt>
+  <dd><%= @yelp_user.url %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:average_stars) %>:</strong></dt>
+  <dd><%= @yelp_user.average_stars %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:review_count) %>:</strong></dt>
+  <dd><%= @yelp_user.review_count %></dd>
+</dl>
+
+<div class="form-actions">
+  <%= link_to t('.back', :default => t("helpers.links.back")),
+              yelp_users_path, :class => 'btn'  %>
+</div>

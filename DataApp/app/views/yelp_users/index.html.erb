@@ -1,0 +1,34 @@
+<%- model_class = YelpUser -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.pluralize %></h1>
+</div>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th><%= model_class.human_attribute_name(:id) %></th>
+      <th><%= model_class.human_attribute_name(:user_id) %></th>
+      <th><%= model_class.human_attribute_name(:name) %></th>
+      <th><%= model_class.human_attribute_name(:url) %></th>
+      <th><%= model_class.human_attribute_name(:average_stars) %></th>
+      <th><%= model_class.human_attribute_name(:review_count) %></th>
+      <th><%= model_class.human_attribute_name(:created_at) %></th>
+      <th><%=t '.actions', :default => t("helpers.actions") %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @yelp_users.each do |yelp_user| %>
+      <tr>
+        <td><%= link_to yelp_user.id, yelp_user_path(yelp_user) %></td>
+        <td><%= yelp_user.user_id %></td>
+        <td><%= yelp_user.name %></td>
+        <td><%= yelp_user.url %></td>
+        <td><%= yelp_user.average_stars %></td>
+        <td><%= yelp_user.review_count %></td>
+        <td><%=l yelp_user.created_at %></td>
+        <td>
+          <%= link_to "Show", yelp_user, :class => 'btn' %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

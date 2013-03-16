@@ -1,0 +1,42 @@
+<%- model_class = Business -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human %></h1>
+</div>
+
+<dl class="dl-horizontal">
+  <dt><strong><%= model_class.human_attribute_name(:business_id) %>:</strong></dt>
+  <dd><%= @business.business_id %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:full_address) %>:</strong></dt>
+  <dd><%= @business.full_address %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:schools) %>:</strong></dt>
+  <dd><%= @business.schools %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:open) %>:</strong></dt>
+  <dd><%= @business.open %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:categories) %>:</strong></dt>
+  <dd><%= @business.categories %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:photo_url) %>:</strong></dt>
+  <dd><%= @business.photo_url %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:city) %>:</strong></dt>
+  <dd><%= @business.city %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:review_count) %>:</strong></dt>
+  <dd><%= @business.review_count %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:name) %>:</strong></dt>
+  <dd><%= @business.name %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:neighborhoods) %>:</strong></dt>
+  <dd><%= @business.neighborhoods %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:url) %>:</strong></dt>
+  <dd><%= @business.url %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:longitude) %>:</strong></dt>
+  <dd><%= @business.longitude %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:state) %>:</strong></dt>
+  <dd><%= @business.state %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:stars) %>:</strong></dt>
+  <dd><%= @business.stars %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:latitude) %>:</strong></dt>
+  <dd><%= @business.latitude %></dd>
+</dl>
+
+<div class="form-actions">
+  <%= link_to t('.back', :default => t("helpers.links.back")),
+              businesses_path, :class => 'btn'  %>
+</div>
