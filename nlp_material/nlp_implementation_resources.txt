@@ -2,4 +2,6 @@ http://fjavieralba.com/basic-sentiment-analysis-with-python.html
 
 http://nltk.org/book/
 
+http://www.laurentluce.com/posts/twitter-sentiment-analysis-using-python-and-nltk/
+
 more to be added...
