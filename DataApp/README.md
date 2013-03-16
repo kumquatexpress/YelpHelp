@@ -29,3 +29,9 @@ Installation: Two ways
         $ sudo apt-get install mysql-client libmysql-ruby1.9.1 libmysqlclient-dev libsqlite3-dev libsqlite3-ruby1.9.1 
         $ gem install rails --include-dependencies --no-ri --no-rdoc
         $cd DataApp && bundle install`
+
+To view data:
+=============
+    After installing and completing the bundle install, run 
+	$ rails s -e production
+    and go to the page localhost:3000/admin, which will ask you to create an account after which you can move around the admin panel and look at the databases.
