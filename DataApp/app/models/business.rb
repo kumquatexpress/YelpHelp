@@ -1,16 +1,15 @@
 class Business < ActiveRecord::Base
 	self.primary_key = "business_id"
 
-	serialize :categories
-	serialize :neighborhoods
-	serialize :schools
+	has_many :categories
+	has_many :schools
+	has_many :neighborhoods
 
 	has_many :reviews
-	
-	attr_accessible :business_id, :categories, :city,
-	:full_address, :latitude, :longitude,
-	:name, :neighborhoods, :open, :photo_url, :review_count,
-	:schools, :stars, :state, :url
+
+	attr_accessible :business_id, :city, :full_address,
+	:latitude, :longitude, :name, :open, :photo_url,
+	:review_count, :stars, :state, :url
 
 	def self.has_photo
 		where("photo_url is not null")
@@ -23,12 +22,16 @@ class Business < ActiveRecord::Base
 	end
 	def self.near_location(lat, long, radius=0.0001)
 		where("latitude > ? and latitude < ? and longitude > ?
-			and longitude < ?", lat-radius, lat+radius, 
-			long-radius, long+radius)
+		and longitude < ?", lat-radius, lat+radius,
+		long-radius, long+radius)
+	end
+	def self.between_points(lat, long, lat2, long2)
+		where("latitude > ? and latitude < ? and longitude > ?
+		and longitude < ?", lat, lat2, long, long2)
 	end
 	def self.open
 		where(:open => true)
 	end
-	
+
 
 end

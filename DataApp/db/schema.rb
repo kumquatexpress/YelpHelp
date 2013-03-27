@@ -11,28 +11,50 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130316023114) do
+ActiveRecord::Schema.define(:version => 20130326224425) do
 
   create_table "businesses", :primary_key => "business_id", :force => true do |t|
     t.string   "full_address"
-    t.string   "schools"
     t.boolean  "open"
-    t.string   "categories"
     t.string   "photo_url"
     t.string   "city"
     t.integer  "review_count"
     t.string   "name"
-    t.string   "neighborhoods"
     t.string   "url"
     t.float    "longitude"
     t.string   "state"
     t.float    "stars"
     t.float    "latitude"
-    t.datetime "created_at",    :null => false
-    t.datetime "updated_at",    :null => false
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
   end
 
   add_index "businesses", ["business_id"], :name => "index_businesses_on_business_id"
+
+  create_table "businesses_categories", :force => true do |t|
+    t.string "business_id"
+    t.string "category_id"
+  end
+
+  create_table "businesses_neighborhoods", :force => true do |t|
+    t.string "business_id"
+    t.string "neighboorhood_id"
+  end
+
+  create_table "businesses_schools", :force => true do |t|
+    t.string "business_id"
+    t.string "school_id"
+  end
+
+  create_table "categories", :primary_key => "name", :force => true do |t|
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "neighborhoods", :primary_key => "name", :force => true do |t|
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "rails_admin_histories", :force => true do |t|
     t.text     "message"
@@ -60,6 +82,11 @@ ActiveRecord::Schema.define(:version => 20130316023114) do
   add_index "reviews", ["business_id"], :name => "index_reviews_on_business_id"
   add_index "reviews", ["review_id"], :name => "index_reviews_on_review_id"
   add_index "reviews", ["yelp_user_id"], :name => "index_reviews_on_yelp_user_id"
+
+  create_table "schools", :primary_key => "name", :force => true do |t|
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "users", :force => true do |t|
     t.string   "email",                  :default => "", :null => false
