@@ -13,7 +13,8 @@
 
 ActiveRecord::Schema.define(:version => 20130326224425) do
 
-  create_table "businesses", :primary_key => "business_id", :force => true do |t|
+  create_table "businesses", :id => false, :force => true do |t|
+    t.string   "business_id"
     t.string   "full_address"
     t.boolean  "open"
     t.string   "photo_url"
@@ -29,29 +30,29 @@ ActiveRecord::Schema.define(:version => 20130326224425) do
     t.datetime "updated_at",   :null => false
   end
 
-  add_index "businesses", ["business_id"], :name => "index_businesses_on_business_id"
-
-  create_table "businesses_categories", :force => true do |t|
+  create_table "businesses_categories", :id => false, :force => true do |t|
     t.string "business_id"
     t.string "category_id"
   end
 
-  create_table "businesses_neighborhoods", :force => true do |t|
+  create_table "businesses_neighborhoods", :id => false, :force => true do |t|
     t.string "business_id"
-    t.string "neighboorhood_id"
+    t.string "neighborhood_id"
   end
 
-  create_table "businesses_schools", :force => true do |t|
+  create_table "businesses_schools", :id => false, :force => true do |t|
     t.string "business_id"
     t.string "school_id"
   end
 
-  create_table "categories", :primary_key => "name", :force => true do |t|
+  create_table "categories", :id => false, :force => true do |t|
+    t.string   "name"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
 
-  create_table "neighborhoods", :primary_key => "name", :force => true do |t|
+  create_table "neighborhoods", :id => false, :force => true do |t|
+    t.string   "name"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
@@ -62,14 +63,15 @@ ActiveRecord::Schema.define(:version => 20130326224425) do
     t.integer  "item"
     t.string   "table"
     t.integer  "month",      :limit => 2
-    t.integer  "year",       :limit => 8
+    t.integer  "year",       :limit => 5
     t.datetime "created_at",              :null => false
     t.datetime "updated_at",              :null => false
   end
 
   add_index "rails_admin_histories", ["item", "table", "month", "year"], :name => "index_rails_admin_histories"
 
-  create_table "reviews", :primary_key => "review_id", :force => true do |t|
+  create_table "reviews", :id => false, :force => true do |t|
+    t.string   "review_id"
     t.string   "yelp_user_id"
     t.integer  "stars"
     t.string   "date"
@@ -80,10 +82,10 @@ ActiveRecord::Schema.define(:version => 20130326224425) do
   end
 
   add_index "reviews", ["business_id"], :name => "index_reviews_on_business_id"
-  add_index "reviews", ["review_id"], :name => "index_reviews_on_review_id"
   add_index "reviews", ["yelp_user_id"], :name => "index_reviews_on_yelp_user_id"
 
-  create_table "schools", :primary_key => "name", :force => true do |t|
+  create_table "schools", :id => false, :force => true do |t|
+    t.string   "name"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
@@ -119,7 +121,8 @@ ActiveRecord::Schema.define(:version => 20130326224425) do
   add_index "votes", ["review_id"], :name => "index_votes_on_review_id"
   add_index "votes", ["yelp_user_id"], :name => "index_votes_on_yelp_user_id"
 
-  create_table "yelp_users", :primary_key => "user_id", :force => true do |t|
+  create_table "yelp_users", :id => false, :force => true do |t|
+    t.string   "user_id"
     t.string   "name"
     t.string   "url"
     t.float    "average_stars"

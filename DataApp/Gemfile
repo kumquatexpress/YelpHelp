@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.8'
 gem 'unicorn'
-
+gem 'geocoder'
 #pagination
 gem 'kaminari'
 #make things look better

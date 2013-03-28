@@ -1,9 +1,9 @@
 class Business < ActiveRecord::Base
 	self.primary_key = "business_id"
 
-	has_many :categories
-	has_many :schools
-	has_many :neighborhoods
+	has_and_belongs_to_many :categories
+	has_and_belongs_to_many :schools
+	has_and_belongs_to_many :neighborhoods
 
 	has_many :reviews
 
@@ -32,6 +32,10 @@ class Business < ActiveRecord::Base
 	def self.open
 		where(:open => true)
 	end
-
+	def self.find_lat_long(str)
+		require 'geocoder'
+		c = Geocoder.search(str)[0]
+		{"lat"=>c.lat, "long"=>c.long}
+	end
 
 end
