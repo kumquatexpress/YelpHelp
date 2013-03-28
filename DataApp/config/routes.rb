@@ -7,6 +7,8 @@ DataApp::Application.routes.draw do
   resources :yelp_users
   resources :reviews
 
+  match '/reviews/search/:food/:operation' => 'reviews#json_info'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

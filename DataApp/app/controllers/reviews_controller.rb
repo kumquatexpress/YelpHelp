@@ -21,4 +21,8 @@ class ReviewsController < ApplicationController
     end
   end
 
+  def json_info
+    reviews = Review.find_food_item(params[:food], params[:operation])
+    render :json => reviews
+  end
 end

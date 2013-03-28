@@ -37,5 +37,8 @@ class Business < ActiveRecord::Base
 		c = Geocoder.search(str)[0]
 		{"lat"=>c.lat, "long"=>c.long}
 	end
+	def self.find_food_item(food)
+	end
+
 
 end

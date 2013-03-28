@@ -11,5 +11,13 @@ class Review < ActiveRecord::Base
 	def self.stars(num)
 		where(:stars => num)
 	end
+	def self.find_food_item(food, operation="text")
+		reviews = []
+		foods = "'%" + food + "%'"
+		Review.where("text LIKE #{foods}").each do |r|
+			reviews << {r.review_id => r.send(operation)}
+		end
+		reviews
+	end
 
 end
