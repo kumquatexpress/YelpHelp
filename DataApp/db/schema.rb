@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130328022604) do
+ActiveRecord::Schema.define(:version => 20130328211616) do
 
   create_table "businesses", :primary_key => "business_id", :force => true do |t|
     t.string   "full_address"
@@ -82,7 +82,7 @@ ActiveRecord::Schema.define(:version => 20130328022604) do
     t.string   "yelp_user_id"
     t.integer  "stars"
     t.string   "date"
-    t.string   "text"
+    t.text     "text"
     t.string   "business_id"
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false

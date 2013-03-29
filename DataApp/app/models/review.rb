@@ -15,7 +15,7 @@ class Review < ActiveRecord::Base
 		reviews = []
 		foods = "'%" + food + "%'"
 		Review.where("text LIKE #{foods}").each do |r|
-			reviews << {review: {id: r.review_id, operation: r.send(operation)}}
+			reviews << {review: {id: r.review_id, business: r.business_id, info: r.send(operation)}}
 		end
 		reviews
 	end

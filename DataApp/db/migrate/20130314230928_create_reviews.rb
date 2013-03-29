@@ -5,7 +5,7 @@ class CreateReviews < ActiveRecord::Migration
       t.string :review_id
       t.integer :stars
       t.string :date
-      t.string :text
+      t.text :text
       t.string :business_id
 
       t.timestamps
