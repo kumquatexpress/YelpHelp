@@ -12,6 +12,9 @@ class Review < ActiveRecord::Base
 		where(:stars => num)
 	end
 	def self.find_food_item(food, operation="text")
+		unless operation
+			operation = "text"
+		end
 		reviews = []
 		foods = "'%" + food + "%'"
 		Review.where("text LIKE #{foods}").each do |r|
