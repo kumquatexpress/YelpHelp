@@ -1,0 +1,61 @@
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<style type="text/css">
+body {
+	margin: 0px;
+	padding: 0px;
+}
+.header {
+	width: 100%;
+	height: 10%;
+	background-color: red;
+	position: relative;
+}
+.main {
+	width: 100%;
+	height: 95%;
+	background-color: green;
+}
+.search {
+	height: 100%;
+	width: 100%;
+}
+#search_box {
+	height : 100%;
+	width: 100%;
+	padding: 0px 1%;
+	border: none;
+	font-size: large;
+}
+</style>
+</head>
+<body>
+	<script src="js/searching.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		search.findRestaurantsByDish("test");
+	});
+	</script>
+	<div class="header">
+		<div class="search">
+			<input type="text" id="search_box" placeholder="Search for a dish" />
+		</div>
+	</div>
+	<div class="main">
+		<div class="listings">
+			<div class="results">
+				<div class="result">
+					<div class="quality"></div>
+					<div class="name"></div>
+					<div class="address"></div>
+				</div>
+			</div>
+		</div>
+		<div class="map">
+
+		</div>
+	</div>
+
+</body>
+</html>

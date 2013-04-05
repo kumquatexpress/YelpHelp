@@ -1,0 +1,14 @@
+{
+	"results" : [
+	{
+		"name" : "New York Gyro",
+		"rating" : 6.0,
+		"address" : "38th and Walnut"
+	},
+	{
+		"name" : "Kim's Oriental Food",
+		"rating" : 5.0,
+		"address" : "37th and Walnut"
+	}
+	]
+}
