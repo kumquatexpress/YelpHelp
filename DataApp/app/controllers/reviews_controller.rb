@@ -23,6 +23,23 @@ class ReviewsController < ApplicationController
 
   def search_food
     reviews = Review.find_food_item(params[:food], params[:operation])
-    render :json => reviews
+    begin
+      render :json => reviews
+    rescue 
+      render :json => []
+    end
+  end
+
+  def all_by_business
+    num = params[:food].to_i
+    unless num
+      num = Business.count
+    end
+    retval = []
+    Business.all.take(num).each do |b|
+      h = {business: b, reviews: b.reviews}
+      retval << h
+    end
+    render :json => retval
   end
 end
