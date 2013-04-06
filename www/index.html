@@ -8,13 +8,13 @@ body {
 }
 .header {
 	width: 100%;
-	height: 10%;
+	height: 7%;
 	background-color: red;
 	position: relative;
 }
 .main {
 	width: 100%;
-	height: 95%;
+	height: 93%;
 	background-color: green;
 }
 .search {
@@ -28,7 +28,36 @@ body {
 	border: none;
 	font-size: large;
 }
+.main .listings {
+	width: 25%;
+	float: left;
+	height: 100%;
+	background-color: blue;
+}
+.main .map {
+	width: 75%;
+	float: left;
+	height: 100%;
+	background-color: gray;
+}
+
 </style>
+
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAId4-J09zYQ5aW97fFC9H57i4XTWYf3I0&sensor=false">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(-34.397, 150.644),
+          zoom: 8,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        var map = new google.maps.Map(document.getElementById("map-canvas"),
+            mapOptions);
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
 </head>
 <body>
 	<script src="js/searching.js" type="text/javascript" charset="utf-8"></script>
@@ -52,7 +81,7 @@ body {
 				</div>
 			</div>
 		</div>
-		<div class="map">
+		<div class="map" id="map-canvas">
 
 		</div>
 	</div>
