@@ -7,7 +7,7 @@ DataApp::Application.routes.draw do
   resources :yelp_users
   resources :reviews
 
-  match '/:controller/:action/:food(/:operation)'
+  match '/:controller/:action(/:food(/:operation))'
 
 
   # The priority is based upon order of creation:
