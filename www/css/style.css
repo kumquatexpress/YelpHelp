@@ -33,10 +33,10 @@ body {
 .result {
     height: 50px;
     padding: 5px;
-    background-color: #a99;
+    background-color: #99a;
 }
 .result:hover {
-    background-color: #caa;
+    background-color: #aac;
 }
 .result > div {
     float: left;
