@@ -32,13 +32,28 @@ body {
 	width: 25%;
 	float: left;
 	height: 100%;
-	background-color: blue;
+	background-color: gray;
+}
+.result {
+    height: 50px;
+    padding: 5px;
+    background-color: #a99;
+}
+.result:hover {
+    background-color: #caa;
+}
+.result > div {
+    float: left;
+    padding-left: 10px;
+}
+.result .quality img {
+    height: 40px;
+    width: 40px;
 }
 .main .map {
 	width: 75%;
 	float: left;
 	height: 100%;
-	background-color: gray;
 }
 
 </style>
@@ -49,8 +64,8 @@ body {
     <script type="text/javascript">
       function initialize() {
         var mapOptions = {
-          center: new google.maps.LatLng(-34.397, 150.644),
-          zoom: 8,
+          center: new google.maps.LatLng(39.969227,-75.157574),
+          zoom: 12,
           mapTypeId: google.maps.MapTypeId.ROADMAP
         };
         var map = new google.maps.Map(document.getElementById("map-canvas"),
@@ -74,11 +89,16 @@ body {
 	<div class="main">
 		<div class="listings">
 			<div class="results">
-				<div class="result">
-					<div class="quality"></div>
-					<div class="name"></div>
-					<div class="address"></div>
-				</div>
+                <div class="result">
+                    <div class="quality"><img src="img/thumbs-up.png" /></div>
+                    <div class="name">Rise N Shine Cafe</div>
+                    <div class="address">3901 Locust Walk</div>
+                </div>
+                <div class="result">
+                    <div class="quality"><img src="img/thumbs-up.png" /></div>
+                    <div class="name">Wokity Walk Wat</div>
+                    <div class="address">3609 Locust Walk</div>
+                </div>
 			</div>
 		</div>
 		<div class="map" id="map-canvas">
