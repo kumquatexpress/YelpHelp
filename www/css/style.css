@@ -1,0 +1,53 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+.header {
+    width: 100%;
+    height: 7%;
+    background-color: red;
+    position: relative;
+}
+.main {
+    width: 100%;
+    height: 93%;
+    background-color: green;
+}
+.search {
+    height: 100%;
+    width: 100%;
+}
+#search_box {
+    height : 100%;
+    width: 100%;
+    padding: 0px 1%;
+    border: none;
+    font-size: large;
+}
+.main .listings {
+    width: 25%;
+    float: left;
+    height: 100%;
+    background-color: gray;
+}
+.result {
+    height: 50px;
+    padding: 5px;
+    background-color: #a99;
+}
+.result:hover {
+    background-color: #caa;
+}
+.result > div {
+    float: left;
+    padding-left: 10px;
+}
+.result .quality img {
+    height: 40px;
+    width: 40px;
+}
+.main .map {
+    width: 75%;
+    float: left;
+    height: 100%;
+}

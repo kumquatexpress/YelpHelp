@@ -3,12 +3,27 @@
 	{
 		"name" : "New York Gyro",
 		"rating" : 6.0,
-		"address" : "38th and Walnut"
+		"address" : "38th and Walnut, 19104"
+	},
+	{
+		"name" : "Chipotle",
+		"rating" : 6.0,
+		"address" : "40th and Walnut, 19104"
+	},
+	{
+		"name" : "Houston Market",
+		"rating" : 4.0,
+		"address" : "34th and Spruce, 19104"
 	},
 	{
 		"name" : "Kim's Oriental Food",
-		"rating" : 5.0,
-		"address" : "37th and Walnut"
+		"rating" : 5.1,
+		"address" : "37th and Walnut, 19104"
+	},
+	{
+		"name" : "Max Brenner",
+		"rating" : 2.1,
+		"address" : "15th and locust, 19104"
 	}
 	]
 }

@@ -1,13 +1,14 @@
-(function(search, $, undefined) {
-	var searchURL = "http://localhost:8080/testdata/restaurants_by_dish.json";
-	search.findRestaurantsByDish = function(dish) {
+(function(searching, $, undefined) {
+	var restaurantURL = "http://localhost:8080/testdata/restaurants_by_dish.json";
+	searching.findRestaurantsByDish = function(dish) {
 		var data = {"dish" : $("#search_box").val()};
 		$.ajax({
-			url : searchURL,
+			url : restaurantURL,
 			cache : false,
 		}).done(function(raw_data) {
 			var restaurants = $.parseJSON(raw_data);
 			$('.results').html('');
+			mapping.clearMarkers();
 			for(var i=0;i < restaurants.results.length;i++) {
 				var r = restaurants.results[i];
 				var rating = "<div class='quality'><img src='img/thumbs-";
@@ -23,7 +24,8 @@
 				var info = "<div class='info'>"+name+address+"</div>"
 				var r_str = "<div class='result'>"+rating+info+"</div>";
 				$('.results').append(r_str);
+				mapping.placeMarker(r.name,r.address);
 			}
 		});
 	};
-}(window.search = window.search || {},jQuery));
+}(window.searching = window.searching || {},jQuery))
