@@ -7,7 +7,8 @@ import nltk.data
 import re, pprint
 
 def get_reviews():
-    soup = BeautifulSoup(urllib2.urlopen('http://www.yelp.com/user_details?userid=93NGtlYTIghF8gKy2Dbb_Q').read())
+    
+    soup = BeautifulSoup(urllib2.urlopen('http://174.129.210.6/reviews/all_by_business/100.json').read())
     return [row.get_text() for row in soup('div', {'class': 'review_comment'})]
 
 def get_words(reviews):
@@ -29,21 +30,22 @@ def extract_features(review):
     return features
 
 reviews = get_reviews()
+print reviews
 
 m_reviews = []
-for fileid in movie_reviews.fileids():
-    words = [e.lower() for e in movie_reviews.raw(fileid).split() if len(e) >= 3]
-    m_reviews.append((words, fileid[0:3]))
+#for fileid in movie_reviews.fileids():
+#    words = [e.lower() for e in movie_reviews.raw(fileid).split() if len(e) >= 3]
+#    m_reviews.append((words, fileid[0:3]))
 
-word_features = get_word_features(get_words(m_reviews))
+#word_features = get_word_features(get_words(m_reviews))
 
 #features = extract_features(word_features, reviews[0])
 #for feature in features.keys():
 #    if features[feature] == True:
 #        print feature
 
-print "training_set"
-training_set = nltk.classify.apply_features(extract_features, m_reviews)
+#print "training_set"
+#training_set = nltk.classify.apply_features(extract_features, m_reviews)
 #print "classifier"
 #try:
 #    classifier = pickle.load(open("classifier.p", "rb"))
@@ -51,11 +53,11 @@ training_set = nltk.classify.apply_features(extract_features, m_reviews)
 #    classifier = nltk.NaiveBayesClassifier.train(training_set)
 #    pickle.dump(classifier, open("classifier.p", "wb"))
 
-sentences = nltk.sent_tokenize(reviews[0])
-sentences = [nltk.word_tokenize(sent) for sent in sentences]
-sentences = [nltk.pos_tag(sent) for sent in sentences]
+#sentences = nltk.sent_tokenize(reviews[0])
+#sentences = [nltk.word_tokenize(sent) for sent in sentences]
+#sentences = [nltk.pos_tag(sent) for sent in sentences]
 
-print sentences
+#print sentences
 
 for review in reviews:
     break
@@ -65,3 +67,4 @@ for review in reviews:
         print classifier.classify(extract_features(sentence.split())), "\t", sentence
         print extract_features(sentence.split())
     print "\n\n"
+
