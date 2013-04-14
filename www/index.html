@@ -1,6 +1,8 @@
 <html>
 <head>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" />
 <link rel="stylesheet" type="text/css" href="css/style.css">
 
     <script type="text/javascript"
@@ -10,12 +12,18 @@
 <body>
     <script src="js/mapping.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/searching.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/listening.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript">
 	$(document).ready(function() {
         mapping.init();
+        listening.init();
+        $("#custom-options").tabs();
         searching.findRestaurantsByDish("test");
 	});
 	</script>
+    <div id="loading">
+        <img src="http://jimpunk.net/Loading/wp-content/uploads/loading25.gif" />
+    </div>
 	<div class="header">
 		<div class="search">
 			<input type="text" id="search_box" placeholder="Search for a dish" />
@@ -35,6 +43,32 @@
                     <div class="address">3609 Locust Walk</div>
                 </div>
 			</div>
+            <div class="preferences">
+                <div id="custom-options">
+                    <ul>
+                        <li><a href="#custom-options-path">Enter Your Trip</a></li>
+                        <li><a href="#custom-options-meals">Enter Your Meals</a></li>
+                        <li><a href="#custom-options-random">Randomize Your Trip</a></li>
+                    </ul>
+                    <div id="custom-options-path">
+                        <input type="text" id="stop-1" placeholder="Stop 1"/>
+                        <input type="text" id="stop-2" placeholder="Stop 2"/>
+                        <input type="text" id="stop-3" placeholder="Stop 3"/>
+                        <input type="submit" id="plot-path" value="Visualize"/>
+                    </div>
+                    <div id="custom-options-meals">
+                        <input type="text" id="dish-1" placeholder="Breakfast meal"/>
+                        <input type="text" id="dish-2" placeholder="Lunch meal"/>
+                        <input type="text" id="dish-3" placeholder="Dinner meal"/>
+                        <input type="submit" id="plot-meals" value="Plan It"/>
+                    </div>
+                    <div id="custom-options-random">
+                        <p>Where do you want to go?</p>
+                        <input type="text" id="place" placeholder="London, Paris, Tokyo"/>
+                        <input type="submit" id="plot-random" value="Plan It"/>
+                    </div>
+                </div>
+            </div>
 		</div>
 		<div class="map" id="map-canvas">
 
