@@ -1,5 +1,5 @@
 (function(searching, $, undefined) {
-	var restaurantURL = "http://localhost:3000/businesses/find_stuff.json";
+	var restaurantURL = document.location.href + "businesses/find_stuff.json";
 	searching.findRestaurantsByDish = function(dish) {
 		var data = {"dish" : $("#search_box").val()};
 		$.ajax({
