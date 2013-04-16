@@ -34,8 +34,9 @@ class Business < ActiveRecord::Base
 	end
 	def self.find_lat_long(str)
 		require 'geocoder'
-		c = Geocoder.search(str)[0]
-		{"lat"=>c.lat, "long"=>c.long}
+		puts str
+		c = Geocoder.coordinates(str)
+		{"lat"=>c[0], "long"=>c[1]}
 	end
 	def self.find_food_item(food)
 	end
