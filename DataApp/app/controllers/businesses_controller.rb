@@ -30,12 +30,13 @@ class BusinessesController < ApplicationController
     coords = Business.find_lat_long(zipc)
     category = Category.where(:name => "Restaurants").first
     Business.near_location(coords['lat'], coords['long'], 0.05).each do |b|
-      if list.length < 4
+      if list.length < 15
         if b.categories.include?(category)
           hash = {}
           hash["name"] = b.name
           hash["rating"] = b.stars
           hash["address"] = b.full_address
+          hash["latlng"] = [b.latitude, b.longitude]
           list << hash
         end
       else

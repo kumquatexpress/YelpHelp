@@ -27,7 +27,7 @@
     };
 
     mapping.getCoordsFromAddress = function (address, callback) {
-        if (geocodes[address] != undefined) {
+        if (geocodes[address] !== undefined) {
             callback(geocodes[address]);
             return;
         }
@@ -44,17 +44,17 @@
         });
     };
 
-    mapping.placeMarker = function (name, address) {
-
-        var callback = function(latlng) {
-            addMarker(name,latlng);
-        };
-        mapping.getCoordsFromAddress(address,callback);
+    mapping.placeMarker = function (name, latlng) {
+        var pos = new google.maps.LatLng(latlng[0], latlng[1], false);
+        //var callback = function(latlng) {
+            addMarker(name,pos);
+        //};
+        //mapping.getCoordsFromAddress(address,callback);
     };
 
     mapping.clearMarkers = function() {
         if(markers) {
-            for(i in markers) {
+            for(var i in markers) {
                 markers[i].setMap(null);
             }
             markers.length = 0;
@@ -64,7 +64,7 @@
     mapping.placeRoute = function(address_list){
         path.length = 0;
         var callback = function(loc) {
-            path.push(loc)
+            path.push(loc);
         };
         for(var i=0;i<address_list.length;i++) {
             mapping.getCoordsFromAddress(address_list[i],callback);

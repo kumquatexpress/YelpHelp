@@ -25,7 +25,7 @@
 				var info = "<div class='info'>"+name+address+"</div>";
 				var r_str = "<div class='result'>"+rating+info+"</div>";
 				$('.results').append(r_str);
-				mapping.placeMarker(r.name,r.address);
+				mapping.placeMarker(r.name,r.latlng);
 			}
 		});
 	};
