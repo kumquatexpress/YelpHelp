@@ -59,7 +59,7 @@ class ReviewsController < ApplicationController
     zipc = "19104"
     retval = []
     coords = Business.find_lat_long(zipc)
-    Business.near_location(coords['lat'], coords['long'], 2)[min..max] do |b|
+    Business.near_location(coords['lat'], coords['long'], 2)[min..max].each do |b|
       h = {business: b, reviews: b.reviews}
       retval << h
     end
