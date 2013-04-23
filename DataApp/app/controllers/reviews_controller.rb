@@ -31,12 +31,16 @@ class ReviewsController < ApplicationController
   end
 
   def all_by_business
-    num = params[:food].to_i
-    unless num
-      num = Business.count
+    min = params[:food].to_i
+    max = params[:operation].to_i
+    unless min
+      min = 0
+    end
+    unless max
+      max = min+100
     end
     retval = []
-    Business.all.take(num).each do |b|
+    Business.all[min..max].each do |b|
       h = {business: b, reviews: b.reviews}
       retval << h
     end
