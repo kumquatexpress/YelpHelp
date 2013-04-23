@@ -21,7 +21,7 @@ class Business < ActiveRecord::Base
 		where("review_count < ?", num)
 	end
 	def self.near_location(lat, long, radius=0.0001)
-		where("latitude > ? and latitude < ? and longitude > ?
+		where("latitude > ? latitude and < ? and longitude > ?
 		and longitude < ?", lat-radius, lat+radius,
 		long-radius, long+radius)
 	end
