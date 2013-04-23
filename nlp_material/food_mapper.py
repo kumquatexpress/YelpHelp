@@ -3,7 +3,7 @@ import urllib2
 from pprint import pprint
 import nltk
 
-jdata = urllib2.urlopen('http://174.129.210.6/reviews/all_by_business/100.json').read()
+jdata = urllib2.urlopen('http://174.129.210.6/reviews/all_by_business/500.json').read()
 #print jdata
 
 
