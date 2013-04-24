@@ -14,14 +14,14 @@
 			data: data_vars,
 			cache: false
 		}).done(function(raw_data) {
-			var restaurants = $.parseJSON(raw_data).results;
+			var restaurants = raw_data.results;
 			$('.results').html('');
 			mapping.clearMarkers();
 
 			for (var i = 0; i < restaurants.length; i++) {
 				var r = restaurants[i];
 				ui.addResult(r);
-				mapping.placeMarker(r.name, new GLatLng(r.latlng[0], r.latlng[1]));
+				mapping.placeMarker(r.name, new google.maps.LatLng(r.latlng[0], r.latlng[1]));
 			}
 		});
 	};
@@ -49,6 +49,7 @@
 				for (var i = 0; i < restaurants.length; i++) {
 					var r = restaurants[i];
 					ui.addResult(r);
+					path.push(new google.maps.LatLng(r.latlng[0], r.latlng[1]));
 				}
 				mapping.placeRoute(route);
 			});
@@ -75,7 +76,7 @@
 			for (var i = 0; i < restaurants.length; i++) {
 				var r = restaurants[i];
 				ui.addResult(r);
-				path.push(new GLatLng(r.latlng[0], r.latlng[1]));
+				path.push(new google.maps.LatLng(r.latlng[0], r.latlng[1]));
 			}
 			mapping.placeRoute(path);
 		});
