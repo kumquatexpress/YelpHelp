@@ -11,7 +11,15 @@ neg = set([word.strip() for word in negfile])
 print "got negative words"
 
 foodfile = open("foods.txt", "ru")
-foods = { food.strip() : [] for food in foodfile }
+foods = {}
+foodnames = {}
+for food in foodfile:
+    food = food.strip().split("\t")
+    if len(food) == 1:
+        foodnames[food[0]] = food[0]
+    else:
+        foodnames[food[0]] = food[1]
+foods = { foodnames[food] : [] for food in foodnames.keys() }
 print "got list of foods"
 
 print "processing..."
@@ -49,8 +57,8 @@ for index in range(0,20):
                     sentiment -= 1
             if sentiment >= 0:
                 for token in tokenized:
-                    if token in foods.keys():
-                        foods[token].append(id)
+                    if token in foodnames.keys():
+                        foods[foodnames[token]].append(id)
 
 jdata = json.JSONEncoder().encode(foods)
 foodmap = open("foodmap.json", "w")
