@@ -105,12 +105,14 @@ class BusinessesController < ApplicationController
           b.shift
         end
         used << b.first
-        hash = {}
-        hash["name"] = b.first.name
-        hash["rating"] = b.first.stars
-        hash["address"] = b.first.full_address
-        hash["latlng"] = [b.first.latitude, b.first.longitude]
-        retval << hash
+        if b.first
+          hash = {}
+          hash["name"] = b.first.name
+          hash["rating"] = b.first.stars
+          hash["address"] = b.first.full_address
+          hash["latlng"] = [b.first.latitude, b.first.longitude]
+          retval << hash
+        end
       end
     end
     render json: {results: retval}
