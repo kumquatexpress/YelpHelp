@@ -11,6 +11,7 @@
 </head>
 <body>
     <script src="js/mapping.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/ui.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/searching.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/listening.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript">
@@ -18,7 +19,7 @@
         mapping.init();
         listening.init();
         $("#custom-options").tabs();
-        searching.findRestaurantsByDish("test");
+        searching.findRestaurants(undefined);
 	});
 	</script>
     <div id="loading">

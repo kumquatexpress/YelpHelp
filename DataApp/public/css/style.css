@@ -42,6 +42,7 @@ body {
     height: 50px;
     padding: 5px;
     background-color: #99a;
+    overflow: hidden;
 }
 .result:hover {
     background-color: #aac;
@@ -53,6 +54,9 @@ body {
 .result .quality img {
     height: 40px;
     width: 40px;
+}
+.result .address {
+    font-size: 75%;
 }
 
 #custom-options {
