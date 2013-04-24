@@ -25,7 +25,7 @@ class ReviewsController < ApplicationController
     reviews = Review.find_food_item(params[:food], params[:operation])
     begin
       render :json => reviews
-    rescue 
+    rescue
       render :json => []
     end
   end
@@ -46,4 +46,25 @@ class ReviewsController < ApplicationController
     end
     render :json => retval
   end
+
+  def close_to_philly
+    min = params[:food].to_i
+    max = params[:operation].to_i
+    unless min
+      min = 0
+    end
+    unless max
+      max = min+100
+    end
+    zipc = "19104"
+    retval = []
+    coords = Business.find_lat_long(zipc)
+    Business.near_location(coords['lat'], coords['long'], 2)[min..max].each do |b|
+      h = {business: b, reviews: b.reviews}
+      retval << h
+    end
+    render :json => retval
+  end
+
+
 end
