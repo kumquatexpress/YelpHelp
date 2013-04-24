@@ -6,7 +6,7 @@
     var geocodes = {};
     var markers = [];
     var path = [];
-    
+
     mapping.placeMarker = function(the_title, latlng) {
         var marker = new google.maps.Marker({
             position: latlng,
@@ -96,7 +96,7 @@
         });
     };
 
-    mapping.placeRouteByAddress = function(address_list) {
+    mapping.batchGeocodeForResult = function(address_list, callback) {
         path.length = 0;
         var callback = function(loc) {
             path.push(loc);
@@ -106,8 +106,15 @@
         }
         $("#loading").show();
         setTimeout(function() {
-            mapping.placeRoute(path);
+            callback(path);
             $("#loading").hide();
-        }, 2000);
+        }, 750 * address_list.length);
+    };
+
+    mapping.placeRouteByAddress = function(address_list) {
+        var callback = function(lats) {
+            mapping.placeRoute(lats);
+        };
+        mapping.batchGeocodeForResult(address_list,callback);
     };
 }(window.mapping = window.mapping || {}, jQuery));
