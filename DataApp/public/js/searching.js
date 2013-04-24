@@ -1,6 +1,6 @@
 (function(searching, $, undefined) {
 	var restaurantURL = document.location.href + "businesses/list_restaurants";
-	var restaurantPathURL = document.location.href + "businesses/list_restaurants";
+	var restaurantPathURL = document.location.href + "businesses/list_by_meal";
 
 	searching.findRestaurants = function(dish) {
 		var coords = mapping.map.getCenter();
@@ -46,13 +46,11 @@
 				var restaurants = $.parseJSON(raw_data).results;
 				$('.results').html('');
 				mapping.clearMarkers();
-				var path = [];
 				for (var i = 0; i < restaurants.length; i++) {
 					var r = restaurants[i];
 					ui.addResult(r);
-					path.push(new GLatLng(r.latlng[0], r.latlng[1]));
 				}
-				mapping.placeRoute(path);
+				mapping.placeRoute(route);
 			});
 		};
 		mapping.batchGeocodeForResult(addrs, callback);
