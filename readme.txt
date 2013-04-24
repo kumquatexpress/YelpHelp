@@ -35,8 +35,9 @@ In nlp_materials/:
 	food_mapper.py - creates json file foodmap.json that links foods to business_ids of those restaurants whose reviews were positive for the particular food
 	foods.txt - list of foods mentioned in reviews
 	get_foods.py - gets a list of nouns from the reviews that might be foods
-	get_opinions - finds sentiment-indicative vocabular in reviews
+	get_opinions - finds sentiment-indicative vocabulary in reviews
 	jdata.json - reviews
 	jjs.txt - sentiment vocabulary items, unsorted
 	negative.txt - negative vocabulary items
 	positive.txt - positive vocabulary items
+	sentiment_words.py - sorts unsorted sentiment vocabulary based on manual taggings in jjs.txt
