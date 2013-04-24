@@ -98,11 +98,11 @@
 
     mapping.batchGeocodeForResult = function(address_list, callback) {
         path.length = 0;
-        var callback = function(loc) {
+        var callback2 = function(loc) {
             path.push(loc);
         };
         for (var i = 0; i < address_list.length; i++) {
-            mapping.getCoordsFromAddress(address_list[i], callback);
+            mapping.getCoordsFromAddress(address_list[i], callback2);
         }
         $("#loading").show();
         setTimeout(function() {
