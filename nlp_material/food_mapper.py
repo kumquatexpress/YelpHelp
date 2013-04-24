@@ -17,16 +17,18 @@ print "got list of foods"
 print "processing..."
 
 for index in range(0,20):
+    jfile = 'http://174.129.210.6/reviews/close_to_philly/' + str((index)*100) + '/'+str((index+1)*100)+'.json'
     try:
-        jfile = 'http://174.129.210.6/reviews/all_by_business/' + str((index)*300) + '/'+str((index+1)*300)+'.json'
+        jdatafile = urllib2.urlopen(jfile).read()
     except:
         print "couldn't read"
         try:
-            jfile = 'http://174.129.210.6/reviews/all_by_business/' + str((index)*300) + '/'+str((index+1)*300)+'.json'
+            jdatafile = urllib2.urlopen(jfile).read()
         except:
             print "still couldn't read. giving up"
+            break
     print jfile
-    jdatafile = urllib2.urlopen(jfile).read()
+
     jdata = open('jdata.json',"w")
     jdata.write(jdatafile)
     jdata.close()
