@@ -6,7 +6,7 @@
     var geocodes = {};
     var markers = [];
     var path = [];
-    var addMarker = function(the_title, latlng) {
+    mapping.placeMarker = function(the_title, latlng) {
         var marker = new google.maps.Marker({
             position : latlng,
             map : mapping.map,
@@ -44,12 +44,11 @@
         });
     };
 
-    mapping.placeMarker = function (name, latlng) {
-        var pos = new google.maps.LatLng(latlng[0], latlng[1], false);
-        //var callback = function(latlng) {
-            addMarker(name,pos);
-        //};
-        //mapping.getCoordsFromAddress(address,callback);
+    mapping.placeMarkerAtAddress = function (name, address) {
+        var callback = function(latlng) {
+            mapping.placeMarker(name,latlng);
+        };
+        mapping.getCoordsFromAddress(address,callback);
     };
 
     mapping.clearMarkers = function() {

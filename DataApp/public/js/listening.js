@@ -2,6 +2,11 @@
 
     listening.init = function() {
         listening.plotPath();
+        $("#search-val").keydown(function(e) {
+            if(e.keyCode == 13) {
+                searching.findRestaurants($(this).val());
+            }
+        });
     };
 
     listening.plotPath = function() {
