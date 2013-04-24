@@ -34,7 +34,7 @@ class BusinessesController < ApplicationController
       return
     end
     list = []
-
+    category = Category.where(:name => "Restaurants").first
     businesses = Business.near_location(lat, long, 0.05)
     if dish
       food = FoodItem.where(:name => dish.downcase).first()
@@ -42,7 +42,7 @@ class BusinessesController < ApplicationController
         businesses = Business.where(:business_id => food.businesses_ids)
       end
     end
-    businesses.take(15).each do |b|
+    businesses.keep_if{|x| x.categories.include?(category)}.take(15).each do |b|
       if list.length < 15
         puts "here"
         hash = {}
@@ -62,39 +62,58 @@ class BusinessesController < ApplicationController
 
 
   def list_multiple_places(lats, longs)
-    list = []
-    lats.zip(longs).each do |lat, long|
-      lat = lat.to_f
-      long = lat.to_f
+    big_list = []
+    category = Category.where(:name => "Restaurants").first
+    lats.zip(longs).each do |coords|
+      list = []
+      lat = coords[0].to_f
+      long = coords[1].to_f
+      puts [lat, long].inspect
       businesses = Business.near_location(lat, long, 0.02)
-      businesses.take(5).each do |b|
+      businesses.uniq.keep_if{|x| x.categories.include?(category)}.take(15).each do |b|
+        puts "here"
         hash = {}
         hash["name"] = b.name
         hash["rating"] = b.stars
         hash["address"] = b.full_address
         hash["latlng"] = [b.latitude, b.longitude]
         list << hash
+        puts list.inspect
       end
+      list.sort!{|x,y| (x["lat"].to_f-lat+x["long"].to_f-long).abs <=> (y["lat"].to_f-lat+y["long"].to_f-long).abs}
+      big_list << list
     end
-    list.sort!{|x,y| (x["lat"].to_f-lat+x["long"].to_f-long).abs <=> (y["lat"].to_f-lat+y["long"].to_f-long).abs}
-    puts list
-    render json: {results: list}
+    puts big_list.flatten
+    render json: {results: big_list.flatten}
   end
 
   def list_by_meal
     lat = params[:lat].to_f
     long = params[:long].to_f
     dishes = params[:dishes]
-    retval = {}
+    category = Category.where(:name => "Restaurants").first
+    retval = []
+    used = []
     dishes.each do |dish|
       food = FoodItem.where(:name => dish.downcase).first()
+      puts food
       if food
-        b = Business.where(:business_id => food.businesses_ids)
-        b.sort!{|x,y| (x.lat-lat+x.long-long).abs <=> (y.lat-lat+y.long-long).abs}
-        retval[dish] = b.first
+        b = Business.where(:business_id => food.businesses_ids).keep_if{|x| x.categories.include?(category)}
+        puts b.inspect
+        b.sort!{|x,y| (x.latitude-lat+x.longitude-long).abs <=> (y.latitude-lat+y.longitude-long).abs}
+        while used.include?(b.first) do
+          b.shift
+        end
+        used << b.first
+        hash = {}
+        hash["name"] = b.first.name
+        hash["rating"] = b.first.stars
+        hash["address"] = b.first.full_address
+        hash["latlng"] = [b.first.latitude, b.first.longitude]
+        retval << hash
       end
     end
-    retval
+    render json: {results: retval}
   end
 
 end

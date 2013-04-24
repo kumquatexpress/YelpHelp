@@ -2,6 +2,8 @@
 
     listening.init = function() {
         listening.plotPath();
+        listening.plotMeals();
+        listening.plotRandom();
         $("#search_box").keydown(function(e) {
             if (e.keyCode == 13) {
                 searching.findRestaurants($(this).val());
@@ -19,7 +21,7 @@
                 }
             }
             if (addrs.length > 1) {
-                mapping.placeRouteByAddress(addrs);
+                searching.findRestaurantsOnRoute(addrs);
             } else {
                 alert("Not enough stops for a route!");
             }
@@ -31,7 +33,7 @@
             var vals = [$("#dish-1").val(), $("#dish-2").val(), $("#dish-3").val()];
             var dishes = [];
             for (var i = 0; i < vals.length; i++) {
-                if (vals[i].length > 3) {
+                if (vals[i].length > 1) {
                     dishes.push(vals[i]);
                 }
             }
