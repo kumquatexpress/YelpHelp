@@ -3,7 +3,8 @@ DataApp::Application.routes.draw do
 
   devise_for :users
 
-  match '/businesses/find_stuff(/:zip)' => 'businesses#list_restaurants'
+  match '/businesses/list_restaurants' => 'businesses#list_restaurants'
+
   match '/:controller/:action(/:food(/:operation))'
 
   # The priority is based upon order of creation:
