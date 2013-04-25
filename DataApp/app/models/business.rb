@@ -9,7 +9,7 @@ class Business < ActiveRecord::Base
 
 	attr_accessible :business_id, :city, :full_address,
 	:latitude, :longitude, :name, :open, :photo_url,
-	:review_count, :stars, :state, :url
+	:review_count, :stars, :state, :url, :generosity
 
 	def self.has_photo
 		where("photo_url is not null")
@@ -41,5 +41,27 @@ class Business < ActiveRecord::Base
 	def self.find_food_item(food)
 	end
 
+	def user_generosity
+		review_sum = 0
+		# for each user who reviewed the establishment
+		self.reviews.each do |review|
+			reviewer = review.yelp_user
 
+			# retrieve all of their reviews
+
+			user_review_sum = 0
+			user_reviews = reviewer.reviews
+			# for each of user's reviews
+			user_reviews.each do |user_review|
+				# compare the user's score with the average score
+				avg_rating = user_review.business.stars
+				user_rating = user_review.stars
+				r_diff = user_rating - avg_rating
+				user_review_sum += r_diff
+
+				review_sum += user_review_sum/user_reviews.count
+			end
+		end
+		review_sum/reviews.count
+	end
 end

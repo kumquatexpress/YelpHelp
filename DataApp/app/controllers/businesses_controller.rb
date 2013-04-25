@@ -48,8 +48,10 @@ class BusinessesController < ApplicationController
         hash = {}
         hash["name"] = b.name
         hash["rating"] = b.stars
-        hash["address"] = b.full_address
+        hash["address"] = b.full_address.gsub("\n", " ")[0..60]
         hash["latlng"] = [b.latitude, b.longitude]
+        hash["generosity"] = b.generosity
+        hash["url"] = b.url
         list << hash
       else
         break
@@ -75,8 +77,10 @@ class BusinessesController < ApplicationController
         hash = {}
         hash["name"] = b.name
         hash["rating"] = b.stars
-        hash["address"] = b.full_address
+        hash["address"] = b.full_address.gsub("\n", " ")[0..60]
         hash["latlng"] = [b.latitude, b.longitude]
+        hash["generosity"] = b.generosity
+        hash["url"] = b.url
         list << hash
         puts list.inspect
       end
@@ -88,6 +92,7 @@ class BusinessesController < ApplicationController
   end
 
   def list_by_meal
+    puts "here"
     lat = params[:lat].to_f
     long = params[:long].to_f
     dishes = params[:dishes]
@@ -109,7 +114,8 @@ class BusinessesController < ApplicationController
           hash = {}
           hash["name"] = b.first.name
           hash["rating"] = b.first.stars
-          hash["address"] = b.first.full_address
+          hash["address"] = b.first.full_address.gsub("\n", " ")[0..60]
+          hash["generosity"] = b.first.generosity
           hash["latlng"] = [b.first.latitude, b.first.longitude]
           retval << hash
         end

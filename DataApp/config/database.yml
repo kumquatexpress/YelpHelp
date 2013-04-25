@@ -22,8 +22,8 @@ production:
   adapter: mysql2
   encoding: utf8
   database: yelp
-  username: YelpHelp
-  password: cis330
+  username: kumquat
+  password: 12hoursaway
   port: 3306
   timeout: 5000
   host: cis330.ca9iefbk06km.us-east-1.rds.amazonaws.com

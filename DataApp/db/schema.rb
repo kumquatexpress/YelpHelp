@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130423223306) do
+ActiveRecord::Schema.define(:version => 20130425033131) do
 
   create_table "businesses", :primary_key => "business_id", :force => true do |t|
     t.string   "full_address"
@@ -25,8 +25,9 @@ ActiveRecord::Schema.define(:version => 20130423223306) do
     t.string   "state"
     t.float    "stars"
     t.float    "latitude"
-    t.datetime "created_at",   :null => false
-    t.datetime "updated_at",   :null => false
+    t.datetime "created_at",                                 :null => false
+    t.datetime "updated_at",                                 :null => false
+    t.decimal  "generosity",   :precision => 2, :scale => 0
   end
 
   add_index "businesses", ["business_id"], :name => "index_businesses_on_business_id"
