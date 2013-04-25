@@ -7,7 +7,7 @@
             rating += "down";
         }
         rating += ".png' /></div>";
-        var name = "<div class='name'><a href='"+r.url+"'>"+ r.name + "</a></div>";
+        var name = "<div class='name'><a target='_blank' href='"+r.url+"'>"+ r.name + "</a></div>";
         var address = "<div class='address'>" + r.address + "</div>";
         var info = "<div class='info'>" + name + address + "</div>";
         var r_str = "<div class='result'>" + rating + info + "</div>";
